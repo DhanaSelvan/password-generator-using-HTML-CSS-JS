@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator using Java Script</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-300">
+    <header>
+        <h1 class="text-center p-3 text-2xl font-semibold bg-blue-100">Password Generator</h1>
+    </header>
+    <section class="flex flex-col gap-5 py-10 px-5 md:px-64 justify-center items-center">
+        <div class="wrapper flex flex-col md:flex-row gap-5">
+            <input type="number" name="" id="length" placeholder="Enter the Password Length" class="px-4 py-2 rounded rounded-md w-64 border">
+            <fieldset>
+                <input type="checkbox" name="" id="upper" placeholder="Enter the Password Length">
+                <label for="upper" class="text-lg ms-2">Upper Case </label>
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" name="" id="char" placeholder="Enter the Password Length">
+                <label for="char" class="text-lg ms-2">Special Character </label>
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" name="" id="digit" placeholder="Enter the Password Length">
+                <label for="digit" class="text-lg ms-2">Digits </label>
+            </fieldset>
+            <button class="bg-green-500 py-2 px-4 w-fit mx-auto text-white rounded hover:bg-green-600 transition" onclick="generate()">Generate</button>
+        </div>
+        <div class="mt-4 bg-white py-5 px-10 rounded rounded-lg h-32">
+            <h3 class="text-xl font-bold underline underline-offset-8">Generated Password</h3>
+            <p id="password" class="mt-5 text-center"></p>
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
